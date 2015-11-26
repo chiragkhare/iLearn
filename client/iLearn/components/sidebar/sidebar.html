@@ -1,0 +1,62 @@
+﻿ 
+<!--<div ng-show="true">-->
+    <div ng-show="side == 'Adminstrator'">
+    <h3> Adminstrator </h3>
+    <div class="panel panel-default" data-toggle="panel-collapse" data-open="false">
+
+
+        <div class="panel-heading panel-collapse-trigger">
+
+            <h4 class="panel-title">Important Links</h4>
+        </div>
+        <div class="panel-body list-group">
+            <ul class="list-group list-group-menu">
+                <li class="list-group-item"><a class="link-text-color" href="#/createUser">Create User</a></li>
+                <li class="list-group-item "><a class="link-text-color" href="#/courseAdd">Course Add</a></li>
+                <li class="list-group-item "><a class="link-text-color" href="#/questionAdd">Question Add</a></li>
+                <li class="list-group-item "><a class="link-text-color" href="#/quiz">Take Quiz</a></li>
+                <li class="list-group-item "><a class="link-text-color" href="#/editProfile">My Profile</a></li>
+                <li class="list-group-item"><a class="link-text-color" href="#/login"><span>Logout</span></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+<!--<div ng-show="true">-->
+    <div ng-show="side == 'Instructor'">
+        <h3>Instructor </h3>
+        <div class="panel panel-default" data-toggle="panel-collapse" data-open="false">
+
+
+            <div class="panel-heading panel-collapse-trigger">
+
+                <h4 class="panel-title">Important Links</h4>
+            </div>
+            <div class="panel-body list-group">
+                <ul class="list-group list-group-menu">
+                    <li class="list-group-item "><a class="link-text-color" href="#/editProfile">My Profile</a></li>
+                    <li class="list-group-item "><a class="link-text-color" href="#/courseAdd">Course Add</a></li>
+                    <li class="list-group-item "><a class="link-text-color" href="#/questionAdd">Question Add</a></li>
+                    <li class="list-group-item"><a class="link-text-color" href="#/login"><span>Logout</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+       <div ng-show="side == 'Student'">
+            <h3>Student</h3>
+            <div class="panel panel-default" data-toggle="panel-collapse" data-open="false">
+
+
+                <div class="panel-heading panel-collapse-trigger">
+
+                    <h4 class="panel-title">Important Links</h4>
+                </div>
+                <div class="panel-body list-group">
+                    <ul class="list-group list-group-menu">
+                        <li class="list-group-item "><a class="link-text-color" href="#/editProfile">My Profile</a></li>
+                        <li class="list-group-item "><a class="link-text-color" href="#/quiz">Take Quiz</a></li>
+                        <li class="list-group-item"><a class="link-text-color" href="#/login"><span>Logout</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,219 @@
+﻿
+<div ng-include="'../../components/navbar/navbar.html'"></div>
+
+<div class="container">
+
+    <div class="page-section">
+        <div class="row">
+
+            <div class="col-md-9">
+
+                <!-- Tabbable Widget -->
+                <div class="tabbable paper-shadow relative" data-z="0.5">
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href=""><i class="fa fa-fw fa-lock"></i> <span class="hidden-sm hidden-xs">Create Account</span></a></li>
+
+                    </ul>
+                    <!-- // END Tabs -->
+                    <!-- Panes -->
+                    <div class="tab-content">
+
+                        <div id="account" class="tab-pane active">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">Avatar</label>
+                                    <div class="col-md-6">
+                                        <div class="media v-middle">
+                                            <div class="media-left">
+                                                <div class="icon-block width-100 bg-grey-100">
+                                                    <i class="fa fa-photo text-light"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#" class="btn btn-white btn-sm paper-shadow relative" data-z="0.5" data-hover-z="1" data-animated> Add Image<i class="fa fa-upl"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-md-2 control-label">Full Name</label>
+                                    <div class="col-md-8">
+                                        <div class="form-control-material">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                <input ng-model="name" type="text" class="form-control" id="exampleInputFirstName" placeholder="Your name">
+                                                <!--   <label for="exampleInputFirstName">First name</label>-->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Type" class="col-md-2 control-label">Gender</label>
+                                    <div class="form-control-material">
+                                        <select ng-model="gender" type="text" name="gender">
+                                            <option value="" selected="selected">--Select--</option>
+                                            <option value="M">Male</option>
+                                            <option value="F">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-md-2 control-label">Email</label>
+                                    <div class="col-md-6">
+                                        <div class="form-control-material">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                <input ng-model="email" type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                                                <!--<label for="inputEmail3">Email address</label>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputaddress3" class="col-md-2 control-label">Permanent Address</label>
+                                    <div class="col-md-6">
+                                        <div class="form-control-material">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-home"></i></span>
+                                                <input ng-model="permanentAdd" type="text" class="form-control used" id="Address1" placeholder="Address">
+                                                <!--<label for="website">Phone Number</label> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputaddress3" class="col-md-2 control-label">Temporary Address</label>
+                                    <div class="col-md-6">
+                                        <div class="form-control-material">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-home"></i></span>
+                                                <input ng-model="temporaryAdd" type="text" class="form-control used" id="Address2" placeholder="Address">
+                                                <!--<label for="website">Phone Number</label> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-md-2 control-label">Contact</label>
+                                    <div class="col-md-6">
+                                        <div class="form-control-material">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                <input ng-model="contactNum" type="number" class="form-control used" id="Phonenumber1" placeholder="Contact">
+                                                <!--<label for="website">Phone Number</label> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-md-2 control-label">Alternative Contact</label>
+                                    <div class="col-md-6">
+                                        <div class="form-control-material">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                <input ng-model="altContactNum" type="number" class="form-control used" id="Phonenumber2" placeholder="Contact">
+                                                <!--<label for="website">Phone Number</label> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-md-2 control-label">Enter Password</label>
+                                    <div class="col-md-6">
+                                        <div class="form-control-material">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-check"></i></span>
+                                                <input ng-model="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                                <!--<label for="inputPassword3">Password</label>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group">
+                                     <label for="inputPassword3" class="col-md-2 control-label">Confirm Password</label>
+                                     <div class="col-md-6">
+                                         <div class="form-control-material">
+                                             <div class="input-group">
+                                                 <span class="input-group-addon"><i class="fa fa-check-circle-o"></i></span>
+                                                 <input type="password" class="form-control" id="ConfirmPassword3" placeholder="Confirm Password">
+                                                 <label for="inputPassword3">Confirm Password</label>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div> -->
+
+                                <div class="form-group">
+                                    <label for="Type" class="col-md-2 control-label">Role</label>
+                                    <div class="form-control-material">
+                                        <select ng-model="role" type="text" name="Type">
+                                            <option value="" selected="selected">--Select--</option>
+                                            <option value="Student">Student</option>
+                                            <option value="Adminstrator">Adminstrator</option>
+                                            <option value="Instructor">Instructor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--<div class="form-group">
+                                    <label class="col-md-2 control-label">Date Of Birth</label>
+                                    <div class="col-md-6">
+                                        <div class="form-control-material">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                <input type="text" ng-model="dob" class="form-control" id="dob" placeholder="Date Of Birth" date-parser="shortDate"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+
+
+
+                                <div class="form-group text-center">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="agree" />
+                                        <label for="agree">* I Agree with <a href="#">Terms &amp; Conditions!</a></label>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#/createUser" class="btn btn-primary" ng-click="createAccount();">Create an Account</a>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- // END Panes -->
+
+                </div>
+                <!-- // END Tabbable Widget -->
+
+                <br />
+                <br />
+
+            </div>
+            <div class="col-md-3">
+
+                <!--<div class="panel panel-default" data-toggle="panel-collapse" data-open="false">
+                    <div class="panel-heading panel-collapse-trigger">
+                        <h4 class="panel-title">My Account</h4>
+                    </div>
+                    <div class="panel-body list-group">
+                        <ul class="list-group list-group-menu">
+                            <li class="list-group-item active"><a class="link-text-color" href="#/profile">Profile</a></li>
+                            <li class="list-group-item"><a class="link-text-color" href="#/login"><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                </div>-->
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div ng-include="'../../components/footer/footer.html'"></div>

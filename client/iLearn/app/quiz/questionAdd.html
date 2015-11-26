@@ -1,0 +1,84 @@
+﻿<div ng-include="'../../components/navbar/navbar.html'"></div>
+<div id="content">
+    <div class="container-fluid">
+
+        <div class="lock-container">
+            <div class="panel panel-default text-center paper-shadow" data-z="0.5">
+                <h1 class="text-display-1">ADDING QUESTION</h1>
+
+                <div class="panel-body">
+                    <!-- Adding Questions -->
+                    <form role="form" action="index.html" name="questionForm">
+                        <div class="form-group">
+                            <div class="form-control-material">
+                                <select ng-model="course" type="text" name="CourseId" ng-options="item as item.CourseName for item in list"></select>
+                                
+                                    
+                           
+                           
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-control-material">
+                                <input id="question" name="question" type="text" ng-model="question" class="form-control" placeholder="question" required>
+                                <p ng-show="questionForm.question.$error.required"><font color="red" size="5">*</font></p>
+                                <label for="Question">Question</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="form-control-material">
+                                <input id="optiona" name="optiona" ng-model="optionA" type="text" class="form-control" placeholder="option_a" required>
+                                <p ng-show="questionForm.optiona.$error.required"><font color="red" size="5">*</font></p>
+                                <label for="optiona">OptionA</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-control-material">
+                                <input id="option" name="optionb" ng-model="optionB" type="text" class="form-control" placeholder="option_b" required>
+                                <p ng-show="questionForm.optionb.$error.required"><font color="red" size="5">*</font></p>
+                                <label for="email">OptionB</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-control-material">
+                                <input id="optionc" name="optionc" ng-model="optionC" type="text" class="form-control" placeholder="option_c" required>
+                                <p ng-show="questionForm.optionc.$error.required"><font color="red" size="5">*</font></p>
+                                <label for="optionc">OptionC</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-control-material">
+                                <input id="optiond" name="optiond" ng-model="optionD" type="text" class="form-control" placeholder="option_d" required>
+                                <p ng-show="questionForm.optiond.$error.required"><font color="red" size="5">*</font></p>
+                                <label for="optiond">OptionD</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-control-material">
+                                <input id="answer" name="answer" ng-model="answer" type="text" class="form-control" placeholder="answer" required>
+                                <p ng-show="questionForm.answer.$error.required"><font color="red" size="5">*</font></p>
+                                <label for="answer">Answer</label>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="#/questionAdd" class="btn btn-primary" ng-click="addQuestion();">Add Question</a>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div ng-include="'../../components/footer/footer.html'"></div>

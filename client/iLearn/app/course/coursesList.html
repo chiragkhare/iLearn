@@ -1,0 +1,293 @@
+﻿<div ng-include="'../../components/navbar/navbar.html'"></div>
+<div style="padding-top:100px" class="parallax bg-white page-section">
+    <div class="container parallax-layer" data-opacity="true">
+        <div class="media v-middle">
+            <div class="media-body">
+                <h1 class="text-display-2 margin-none">ILearn Courses</h1>
+                <p class="text-light lead">Have a look at various courses available.</p>
+                <a href="#/editProfile">{{roleL}}</a>
+
+            </div>
+            <div class="media-right">
+                <div class="width-100 text-right">
+                    <div class="btn-group">
+                        <a class="btn btn-white" href="#/courseGrid"><i class="fa fa-th"></i></a>
+                        <a class="btn btn-grey-900" href="#/courseList"><i class="fa fa-list"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="page-section">
+        <div class="row">
+
+            <div class="col-md-9" >
+
+                <div class="panel panel-default paper-shadow" data-z="0.5" ng-repeat="course in courseListL">
+                    <div class="panel-body">
+
+                        <div class="media media-clearfix-xs">
+                            <div class="media-left text-center">
+                                <div class="cover width-150 width-100pc-xs overlay cover-image-full hover margin-v-0-10">
+                                    <span class="img icon-block height-130 bg-default"></span>
+                                    <span class="overlay overlay-full padding-none icon-block bg-default">
+                                        <span class="v-center">
+                                            <i class="fa fa-github"></i>
+                                        </span>
+                                    </span>
+                                    <a href="#/quiz" class="overlay overlay-full overlay-hover overlay-bg-white">
+                                        <span class="v-center">
+                                            <span class="btn btn-circle btn-white btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="text-headline margin-v-5-0"><a href="#/quiz">{{course.CourseName}}</a></h4>
+                                <p class="small">
+                                    <span class="fa fa-fw fa-star text-yellow-800"></span>
+                                    <span class="fa fa-fw fa-star text-yellow-800"></span>
+                                    <span class="fa fa-fw fa-star text-yellow-800"></span>
+                                    <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                                    <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                                </p>
+                                <p>Test your skills at android app development. Take a simple test.</p>
+
+                                <hr class="margin-v-8" />
+                                <div class="media v-middle">
+
+                                    <div class="media-left">
+                                        <img src="../../assets/images/people/50/guy-2.jpg" alt="People" class="img-circle width-40" />
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>
+                                            <a href="">{{course.Instructor}}</a>
+                                            <br />
+                                        </h4>
+                                        Instructor
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--<div class="panel panel-default paper-shadow" data-z="0.5">
+            <div class="panel-body">
+
+                <div class="media media-clearfix-xs">
+                    <div class="media-left text-center">
+                        <div class="cover width-150 width-100pc-xs overlay cover-image-full hover margin-v-0-10">
+                            <span class="img icon-block height-130 bg-primary"></span>
+                            <span class="overlay overlay-full padding-none icon-block bg-primary">
+                                <span class="v-center">
+                                    <i class="fa fa-css3"></i>
+                                </span>
+                            </span>
+                            <a href="#/quiz" class="overlay overlay-full overlay-hover overlay-bg-white">
+                                <span class="v-center">
+                                    <span class="btn btn-circle btn-primary btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-headline margin-v-5-0"><a href="#/quiz">CRT</a></h4>
+                        <p class="small">
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                        </p>
+                        <p>Test your aptitude skills.Prepare for campus recruitment</p>
+
+                        <hr class="margin-v-8" />
+                        <div class="media v-middle">
+                            <div class="media-left">
+                                <img src="../../assets/images/people/50/guy-5.jpg" alt="People" class="img-circle width-40" />
+                            </div>
+                            <div class="media-body">
+                                <h4>
+                                    <a href="">Tushar Vadera</a>
+                                    <br />
+                                </h4>
+                                Instructor
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel panel-default paper-shadow" data-z="0.5">
+            <div class="panel-body">
+
+                <div class="media media-clearfix-xs">
+                    <div class="media-left text-center">
+                        <div class="cover width-150 width-100pc-xs overlay cover-image-full hover margin-v-0-10">
+                            <span class="img icon-block height-130 bg-lightred"></span>
+                            <span class="overlay overlay-full padding-none icon-block bg-lightred">
+                                <span class="v-center">
+                                    <i class="fa fa-windows"></i>
+                                </span>
+                            </span>
+                            <a href="#/quiz" class="overlay overlay-full overlay-hover overlay-bg-white">
+                                <span class="v-center">
+                                    <span class="btn btn-circle btn-red-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-headline margin-v-5-0"><a href="quiz.html">JAVA</a></h4>
+                        <p class="small">
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                        </p>
+                        <p>
+                            Test your hands on JAVA. Take a 10 minutes test on JAVA/p>
+
+                            <hr class="margin-v-8" />
+                            <div class="media v-middle">
+                                <div class="media-left">
+                                    <img src="../../assets/images/people/50/guy-4.jpg" alt="People" class="img-circle width-40" />
+                                </div>
+                                <div class="media-body">
+                                    <h4>
+                                        <a href="">Dheeraj Mittal</a>
+                                        <br />
+                                    </h4>
+                                    Instructor
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel panel-default paper-shadow" data-z="0.5">
+            <div class="panel-body">
+
+                <div class="media media-clearfix-xs">
+                    <div class="media-left text-center">
+                        <div class="cover width-150 width-100pc-xs overlay cover-image-full hover margin-v-0-10">
+                            <span class="img icon-block height-130 bg-brown"></span>
+                            <span class="overlay overlay-full padding-none icon-block bg-brown">
+                                <span class="v-center">
+                                    <i class="fa fa-wordpress"></i>
+                                </span>
+                            </span>
+                            <a href="#/quiz" class="overlay overlay-full overlay-hover overlay-bg-white">
+                                <span class="v-center">
+                                    <span class="btn btn-circle btn-orange-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-headline margin-v-5-0"><a href="#/quiz">Angular JS Web Development</a></h4>
+                        <p class="small">
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                        </p>
+                        <p>Try creating a website with angular JS.</p>
+
+                        <hr class="margin-v-8" />
+                        <div class="media v-middle">
+                            <div class="media-left">
+                                <img src="../../assets/images/people/50/guy-6.jpg" alt="People" class="img-circle width-40" />
+                            </div>
+                            <div class="media-body">
+                                <h4>
+                                    <a href="">Chirag Khare</a>
+                                    <br />
+                                </h4>
+                                Instructor
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel panel-default paper-shadow" data-z="0.5">
+            <div class="panel-body">
+
+                <div class="media media-clearfix-xs">
+                    <div class="media-left text-center">
+                        <div class="cover width-150 width-100pc-xs overlay cover-image-full hover margin-v-0-10">
+                            <span class="img icon-block height-130 bg-purple"></span>
+                            <span class="overlay overlay-full padding-none icon-block bg-purple">
+                                <span class="v-center">
+                                    <i class="fa fa-jsfiddle"></i>
+                                </span>
+                            </span>
+                            <a href="#/quiz" class="overlay overlay-full overlay-hover overlay-bg-white">
+                                <span class="v-center">
+                                    <span class="btn btn-circle btn-purple-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-headline margin-v-5-0"><a href="#/quiz">Dot Net</a></h4>
+                        <p class="small">
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                            <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                        </p>
+                        <p>Take a stunning quiz on Windows Form Development.</p>
+
+                        <hr class="margin-v-8" />
+                        <div class="media v-middle">
+                            <div class="media-left">
+                                <img src="../../assets/images/people/50/guy-6.jpg" alt="People" class="img-circle width-40" />
+                            </div>
+                            <div class="media-body">
+                                <h4>
+                                    <a href="">Chirag Khare</a>
+                                    <br />
+                                </h4>
+                                Instructor
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>-->
+
+
+
+            </div>
+            <div class="col-md-3">
+                <div ng-include="'../../components/sidebar/sidebar.html'"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div ng-include="'../../components/footer/footer.html'"></div>
